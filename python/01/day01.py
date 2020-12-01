@@ -1,11 +1,10 @@
-import operator
-from functools import reduce
+import math
 from itertools import product
 
 
 def search(values, n, target=2020):
     return next(
-        reduce(operator.mul, v)
+        math.prod(v)
         for v in product(values, repeat=n)
         if sum(v) == target)
 
