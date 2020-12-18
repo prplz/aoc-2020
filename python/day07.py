@@ -9,7 +9,7 @@ def main():
             for inner in inners.split(', ')]
         return outer, inners
 
-    with open('../../inputs/07.txt') as f:
+    with open('../inputs/07.txt') as f:
         bags = dict(map(parse, f))
 
     def search(current):

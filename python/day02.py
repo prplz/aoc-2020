@@ -15,7 +15,7 @@ def part2_valid(pos1, pos2, char, password):
 
 
 def main():
-    with open('../../inputs/02.txt') as f:
+    with open('../inputs/02.txt') as f:
         data = list(map(parse, f))
 
     part1 = sum(part1_valid(*args) for args in data)

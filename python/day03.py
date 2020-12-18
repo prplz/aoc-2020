@@ -4,7 +4,7 @@ from itertools import count
 
 
 def main():
-    with open('../../inputs/03.txt') as f:
+    with open('../inputs/03.txt') as f:
         data = list(map(str.rstrip, f))
 
     width = len(data[0])

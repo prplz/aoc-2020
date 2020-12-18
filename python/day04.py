@@ -2,7 +2,7 @@ import re
 
 
 def main():
-    with open('../../inputs/04.txt') as f:
+    with open('../inputs/04.txt') as f:
         passports = f.read().split('\n\n')
 
     passports = (

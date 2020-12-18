@@ -4,7 +4,7 @@ def main():
         col = int(line[7:].replace('L', '0').replace('R', '1'), base=2)
         return row * 8 + col
 
-    with open('../../inputs/05.txt') as f:
+    with open('../inputs/05.txt') as f:
         seats = list(map(parse_seat, f))
 
     max_seat = max(seats)

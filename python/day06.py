@@ -2,7 +2,7 @@ from functools import reduce
 
 
 def main():
-    with open('../../inputs/06.txt') as f:
+    with open('../inputs/06.txt') as f:
         data = f.read().split('\n\n')
     data = [list(map(set, group.split())) for group in data]
 

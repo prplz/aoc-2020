@@ -27,7 +27,7 @@ def functional_solution(values, n, target=2020):
 
 
 def main():
-    with open('../../inputs/01.txt') as f:
+    with open('../inputs/01.txt') as f:
         values = list(map(int, f))
 
     part1_solutions = [
