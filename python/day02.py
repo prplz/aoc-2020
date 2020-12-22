@@ -1,4 +1,5 @@
 import re
+from itertools import starmap
 
 
 def parse(line) -> tuple[int, int, str, str]:
@@ -17,11 +18,10 @@ def part2_valid(pos1, pos2, char, password):
 def main():
     with open('../inputs/02.txt') as f:
         data = list(map(parse, f))
-
-    part1 = sum(part1_valid(*args) for args in data)
+    part1 = sum(starmap(part1_valid, data))
     assert part1 == 483
 
-    part2 = sum(part2_valid(*args) for args in data)
+    part2 = sum(starmap(part2_valid, data))
     assert part2 == 482
 
 
